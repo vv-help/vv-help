@@ -1,0 +1,23 @@
+.splitter {
+    height: 60px;
+}
+
+.info-sec {
+    padding-top: 40px;
+}
+
+
+.help-card {
+    width: 100px;
+    background-color:red;
+}
+
+.social-card {
+    width: 300px;
+}
+
+.change-langugage {
+
+    background-color: red;
+    color: green;
+}
