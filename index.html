@@ -17,6 +17,8 @@
         <link href="css/styles.css" rel="stylesheet" />
         <link href="css/conf.css" rel="stylesheet" />
         <script src="https://kit.fontawesome.com/83c9b01a57.js" crossorigin="anonymous"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="js/language.js"></script>
     </head>
     <body id="page-top">
         <!-- Navigation-->
@@ -29,10 +31,11 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarResponsive">
                     <ul class="navbar-nav ms-auto">
-                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#main">Головна</a></li>
-                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#help">Домопогти</a></li>
-                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#contact">Контакти</a></li>
-                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#contact">Мова</a></li>
+                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded lang" href="#main" key="main_header"></a></li>
+                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded lang" href="#help" key="help_header"></a></li>
+                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded lang" href="#contact" key="contacts_header"></a></li>
+                        <li id="pl" class="nav-item mx-0 mx-lg-1 translate" style="cursor: pointer;"><a class="nav-link py-3 px-0 px-lg-3 rounded"><img src="assets/img/lang/pl.png" width="30px" alt=""></a></li>
+                        <li id="ua" class="nav-item mx-0 mx-lg-1 translate" style="cursor: pointer;"><a class="nav-link py-3 px-0 px-lg-3 rounded"><img src="assets/img/lang/ua.png" width="30px" alt=""></a></li>
                     </ul>
                 </div>
             </div>
@@ -49,7 +52,7 @@
         <section class="page-section bg-primary text-white mb-0" id="main">
             <div class="container info-sec">
                 <!-- About Section Heading-->
-                <h2 class="page-section-heading text-center text-uppercase text-white">Допоможи Україні!</h2>
+                <h2 class="page-section-heading text-center text-uppercase text-white lang" key="about_help"></h2>
                 <!-- Icon Divider-->
                 <div class="divider-custom divider-light">
                     <div class="divider-custom-line"></div>
@@ -60,13 +63,13 @@
                 <div class="row d-flex justify-content-center">
                     <div class="container text-center">
 
-                        <p class="lead">Ми - команда волонтерів з України, які організували склад у Польщі для збору необхідних речей.</p>
+                        <p class="lead lang" key="about_who"></p>
                         
-                        <p class="lead">Місце складу: село Городло, вулиця Лужков, 4б</p>
+                        <p class="lead lang" key="about_place"></p>
 
-                        <p class="lead">Ми вже надзвичайно вдячні за підтримку усіх, хто зараз знаходиться в Польщі і робить усе можливе, аби допомогти Україні. Знаємо, що закордоном є так багато тих, хто готовий нам допомагати стільки, скільки це буде потрібно.</p>
+                        <p class="lead lang" key="about_text"></p>
 
-                        <p class="lead">Аби зробити свій внесок для допомоги України ви можете обрати будь-який із варіантів нижче: </p>
+                        <p class="lead lang" key="about_do"></p>
 
 
 
@@ -80,7 +83,7 @@
         <section class="page-section portfolio" id="help">
             <div class="container">
                 <!-- Portfolio Section Heading-->
-                <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Допомога</h2>
+                <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0 lang" key="help_section"></h2>
                 <!-- Icon Divider-->
                 <div class="divider-custom">
                     <div class="divider-custom-line"></div>
@@ -96,7 +99,7 @@
                                 <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
                             </div>
                             <img class="img-fluid" src="assets/img/content/aid.png" alt="..." />
-                            <h3 class="text-center">Медична допомога</h3>
+                            <h3 class="text-center lang" key="aid_header"></h3>
                         </div>
                     </div>
                     <!-- Portfolio Item 2-->
@@ -106,7 +109,7 @@
                                 <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
                             </div>
                             <img class="img-fluid" src="assets/img/content/food.png" alt="..." />
-                            <h3 class="text-center">Їжа</h3>
+                            <h3 class="text-center lang" key="food_header"></h3>
                         </div>
                     </div>
                     <!-- Portfolio Item 3-->
@@ -116,7 +119,7 @@
                                 <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
                             </div>
                             <img class="img-fluid" src="assets/img/content/clothes.png" alt="..." />
-                            <h3 class="text-center">Одяг та побут</h3>
+                            <h3 class="text-center lang" key="clo_header"></h3>
                         </div>
                     </div>
 
@@ -127,7 +130,7 @@
                         <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
                     </div>
                     <img class="img-fluid" src="assets/img/content/money.png" alt="..." />
-                    <h3 class="text-center">Фінансові ресурси</h3>
+                    <h3 class="text-center lang" key="fin_header"></h3>
                 </div>
             </div>
 
@@ -138,7 +141,7 @@
                     <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
                 </div>
                 <img class="img-fluid" src="assets/img/content/info.png" alt="..." />
-                <h3 class="text-center">Інформаційна підтримка</h3>
+                <h3 class="text-center lang" key="info_header"></h3>
             </div>
         </div>
 
@@ -149,7 +152,7 @@
                     <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
                 </div>
                 <img class="img-fluid" src="assets/img/content/other.png" alt="..." />
-                <h3 class="text-center">Інше</h3>
+                <h3 class="text-center lang" key="other_header"></h3>
             </div>
         </div>
 
@@ -161,7 +164,7 @@
         <section class="page-section portfolio" id="contact">
             <div class="container">
                 <!-- Portfolio Section Heading-->
-                <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Контакти</h2>
+                <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0 lang" key="contacts_section"></h2>
                 <!-- Icon Divider-->
                 <div class="divider-custom">
                     <div class="divider-custom-line"></div>
@@ -209,16 +212,13 @@
                 <div class="row d-flex justify-content-center">
                     <!-- Footer Location-->
                     <div class="col-lg-4 mb-5 mb-lg-0">
-                        <h4 class="text-uppercase mb-4">Адреса складу</h4>
-                        <p class="lead mb-0">
-                            село Городло (Польща)
-                            <br />
-                            вулиця Лужков, 4б
+                        <h4 class="text-uppercase mb-4 lang" key="footer_adr_header"></h4>
+                        <p class="lead mb-0 lang" key="footer_ard_text">
                         </p>
                     </div>
                     <!-- Footer Social Icons-->
                     <div class="col-lg-4 mb-5 mb-lg-0">
-                        <h4 class="text-uppercase mb-4">Контакти</h4>
+                        <h4 class="text-uppercase mb-4 lang" key="footer_contacts"></h4>
                         <a class="btn btn-outline-light btn-social mx-1" href="#!"><i class="fab fa-fw fa-facebook-f"></i></a>
                         <a class="btn btn-outline-light btn-social mx-1" href="#!"><i class="fab fa-fw fa-telegram"></i></a>
     
@@ -265,7 +265,7 @@
                             <div class="row justify-content-center">
                                 <div class="col-lg-8">
                                     <!-- Portfolio Modal - Title-->
-                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Медична допомога</h2>
+                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0 lang" key="aid_header"></h2>
                                     <!-- Icon Divider-->
                                     <div class="divider-custom">
                                         <div class="divider-custom-line"></div>
@@ -275,9 +275,9 @@
  
                                     <!-- Portfolio Modal - Text-->
                                     <p class="mb-4">
-                                        <p class="lead">Ліки - це найнеобхідніше з усього на цей момент. Якщо ви думаєте, що краще - зробити грошовий внесок, чи надіслати ліки. Обирайте ліки!</p> 
-                                        <p class="lead">Ви можете купити ліки та направити їх на наш склад за адресою село Городло, вулиця Лужков, 4б (Польща)</p>
-                                        <p class="lead">Список необхідних ліків на цей момент:</p>
+                                        <p class="lead lang" key="aid_text"></p> 
+                                        <p class="lead lang" key="aid_where"></p>
+                                        <p class="lead lang" key="aid_what"></p>
 
                                     </p>
                      
@@ -298,7 +298,7 @@
                             <div class="row justify-content-center">
                                 <div class="col-lg-8">
                                     <!-- Portfolio Modal - Title-->
-                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Їжа</h2>
+                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0 lang" key="food_header"></h2>
                                     <!-- Icon Divider-->
                                     <div class="divider-custom">
                                         <div class="divider-custom-line"></div>
@@ -309,10 +309,10 @@
                                     <!-- Portfolio Modal - Text-->
                                     <p class="mb-4">
                                     
-                                      <p class="lead">Перш ніж відсилати продукти, подуймайте про те, наскільки довго вони можуть зберігатися. Бо ми були свідками того, як продукти, що надійшли в Україну доводилось викидати, бо вони за кілька днів зіпсувались. Давайте допомогати, але ефективно!</p>  
-                                      <p class="lead">Ви можете купити потрібні продукти, або виділити їх зі своїх запасів та направити їх на наш склад за адресою село Городло, вулиця Лужков, 4б (Польща).</p>
+                                      <p class="lead lang" key="food_text"></p>  
+                                      <p class="lead lang" key="food_where"></p>
 
-                                      <p class="lead">Список необхідних продуктів на цей момент: </p>
+                                      <p class="lead lang" key="food_what"></p>
 
 
                                     </p>
@@ -334,7 +334,7 @@
                             <div class="row justify-content-center">
                                 <div class="col-lg-8">
                                     <!-- Portfolio Modal - Title-->
-                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Одяг та побутові предмети:</h2>
+                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0 lang" key="clo_modal_header"></h2>
                                     <!-- Icon Divider-->
                                     <div class="divider-custom">
                                         <div class="divider-custom-line"></div>
@@ -344,9 +344,9 @@
                                
                                     <!-- Portfolio Modal - Text-->
                                     <p class="mb-4">
-                                        <p class="lead">Ви можете обрати хоча б щось із цього списку та направити на наш склад за адресою село Городло, вулиця Лужков, 4б (Польща).</p>                                   
+                                        <p class="lead lang" key="clo_where"></p>                                   
                                 
-                                        <p class="lead">Список необхідного на цей момент:</p>
+                                        <p class="lead lang" key="clo_what"></p>
                                     </p>
                           
                                 </div>
@@ -366,7 +366,7 @@
                             <div class="row justify-content-center">
                                 <div class="col-lg-8">
                                     <!-- Portfolio Modal - Title-->
-                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Фінансові ресурси</h2>
+                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0 lang" key="fin_header"></h2>
                                     <!-- Icon Divider-->
                                     <div class="divider-custom">
                                         <div class="divider-custom-line"></div>
@@ -399,7 +399,7 @@
                                         <p class="lead">
                                             CORRESPONDENT ACCOUNT
                                             <br>
-                                            Рахунок банку отримувача в банку-кореспонденті
+                                            <span class="lang" key="fin_bank_account"></span>
                                             <br>
                                             0011000080
 
@@ -408,7 +408,7 @@
                                         <p class="lead">
                                             INTERMEDIARY BANK
                                             <br>
-                                            Банк-кореспондент
+                                            <span class="lang" key="fin_bank"></span>
                                             <br>
                                             JP MORGAN CHASE BANK
                                             <br>
@@ -417,8 +417,7 @@
 
                                         <br>
                                         <br>
-                                        <p class="lead">
-                                            Ми беремо на себе зобов’язання звітувати тут на цьому сайті про усі витрати, які будуть здійснені завдяки вашій фінансовій підтримці. З будь-яких питань - пишіть на пошту tarasiuk.sofi@gmail.com
+                                        <p class="lead lang" key="fin_text">
                                         </p>
                                         
                                     </p>
@@ -440,7 +439,7 @@
                             <div class="row justify-content-center">
                                 <div class="col-lg-8">
                                     <!-- Portfolio Modal - Title-->
-                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Інформаційна підтримка</h2>
+                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0 lang" key="info_header"></h2>
                                     <!-- Icon Divider-->
                                     <div class="divider-custom">
                                         <div class="divider-custom-line"></div>
@@ -450,7 +449,7 @@
                                    
                                     <!-- Portfolio Modal - Text-->
                                     <p class="mb-4">
-                                        <p class="lead">Зроби пост у соціальних мережах з лінком на цей сайт, аби ваші друзі, знайомі та усі охочі допомогти, могли це зробити. Один клік - і ви вже зможете допомогти нам боротися проти війни!</p>
+                                        <p class="lead lang" key="info_text"></p>
                                         </p>
 
                                 </div>
@@ -470,7 +469,7 @@
                             <div class="row justify-content-center">
                                 <div class="col-lg-8">
                                     <!-- Portfolio Modal - Title-->
-                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Інше</h2>
+                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0 lang" key="other_header"></h2>
                                     <!-- Icon Divider-->
                                     <div class="divider-custom">
                                         <div class="divider-custom-line"></div>
@@ -480,9 +479,7 @@
                          
                                     <!-- Portfolio Modal - Text-->
                                     <p class="mb-4">
-                                        <p class="lead">Можеш допомогти в інакший спосіб, то пиши сюди: tarasiuk.sofi@gmail.com
-                                            <br>
-                                            Або на наші соцмережі.
+                                        <p class="lead lang" key="other_text">
                                         </p>
                                          </p>                             
                                 </div>
