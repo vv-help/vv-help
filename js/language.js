@@ -1,5 +1,6 @@
 const arrLang = {
     'pl': {
+        menu: "Menu",
         main_header: "O nas",
         help_header: "Pomoc",
         contacts_header: "Łączność",
@@ -48,6 +49,7 @@ const arrLang = {
 
     },
     'ua': {
+        menu: "Меню",
         main_header: "Про нас",
         help_header: "Допомогти",
         contacts_header: "Контакти",
