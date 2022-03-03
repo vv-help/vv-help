@@ -61,14 +61,14 @@ const arrLang = {
         help_section: "Допомога",
 
 
-        aid_header: "МЕДИЧНА ДОПОМОГА",
+        aid_header: "Медична допомога",
         aid_text: "Ліки - це найнеобхідніше з усього на цей момент. Якщо ви думаєте, що краще - зробити грошовий внесок, чи надіслати ліки. Обирайте ліки!",
         aid_where: "Ви можете купити ліки та направити їх на наш склад за адресою село Городло, вулиця Лужков, 4б (Польща)",
         aid_what: "Список необхідних ліків на цей момент:",
 
 
 
-        food_header: "їжа",
+        food_header: "Їжа",
         food_text: "Перш ніж відсилати продукти, подуймайте про те, наскільки довго вони можуть зберігатися. Бо ми були свідками того, як продукти, що надійшли в Україну доводилось викидати, бо вони за кілька днів зіпсувались. Давайте допомогати, але ефективно!",
         food_where: "Ви можете купити потрібні продукти, або виділити їх зі своїх запасів та направити їх на наш склад за адресою село Городло, вулиця Лужков, 4б (Польща).",
         food_what: "Список необхідних продуктів на цей момент:",
@@ -100,6 +100,59 @@ const arrLang = {
         footer_ard_text: "село Городло, вулиця Лужков, 4б (Польща)",
         footer_contacts: "Контакти"
 
+    },
+
+    'en' : {
+        menu: "Menu",
+        main_header: "About us",
+        help_header: "Help",
+        contacts_header: "Contacts",
+        about_help: "Help Ukraine",
+        about_who: "We are a team of volunteers from Ukraine who organized a warehouse in Poland to collect the necessary things.",
+        about_place: "Place of warehouse: Gorodlo village, Luzhkov street, 4b",
+        about_text: "We are already very grateful for the support of everyone who is currently in Poland and doing everything possible to help Ukraine. We know that there are so many abroad who are ready to help us as much as needed.",
+        about_do: "To contribute to Ukraine, you can choose any of the options below:",
+        help_section: "Help",
+
+
+        aid_header: "Aid",
+        aid_text: "Medicine is the most important thing at the moment. If you think it's better to make a cash contribution or send medicine. Choose medicine!",
+        aid_where: "You can buy medicines and send them to our warehouse at the address: Gorodlo village, 4b Luzhkov Street (Poland)",
+        aid_what: "List of medicines needed at the moment:",
+
+
+
+        food_header: "Food",
+        food_text: "Before you send the products, think about how long they can be stored. Because we witnessed how the products that arrived in Ukraine had to be thrown away because they spoiled in a few days. Let's help, but effectively!",
+        food_where: "You can buy the necessary products, or select them from your stocks and send them to our warehouse at Gorodblo, 4b Luzhkov Street (Poland).",
+        food_what: "List of required products at the moment:",
+
+
+        clo_header: "Clothes",
+        clo_modal_header: "Clothes and Household Items",
+        clo_where: "You can choose at least something from this list and send to our warehouse at the village of Gorodlo, 4b Luzhkov Street (Poland).",
+        clo_what: "List required at this time:",
+
+        
+        fin_header: "Financial Resources",
+        fin_text: "We undertake to report here on this site all costs that will be incurred thanks to your financial support. For any questions - write to tarasiuk.sofi@gmail.com",
+        fin_bank_account: "Beneficiary's bank account",
+        fin_bank: "Correspondent Bank",
+        
+
+
+        info_header: "Information Support",
+        info_text: "Post on social media with a link to this site so that your friends, acquaintances and anyone who wants to help can do it. One click - and you can already help us fight the war!",
+
+        other_header: "Other",
+        other_text: "You can help in another way, then write here: tarasiuk.sofi@gmail.com",
+
+
+        
+        contacts_section: "Contacts",
+        footer_adr_header: "Warehouse Address",
+        footer_ard_text: "Gorodlo village, 4b Luzhkow Street (Poland)",
+        footer_contacts: "Contacts"
     }
 }
 
@@ -117,6 +170,6 @@ $(function() {
 window.onload = function() {
     console.log("ff")
     $('.lang').each(function(index, item) {
-        $(this).text(arrLang['ua'][$(this).attr('key')]);
+        $(this).text(arrLang['en'][$(this).attr('key')]);
     })
 };
